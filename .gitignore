@@ -1,0 +1,11 @@
+buffer.txt
+COD*.txt
+inits*.txt
+odc*
+
+.ipynb_checkpoints
+
+.Rhistory
+
+/data
+/models

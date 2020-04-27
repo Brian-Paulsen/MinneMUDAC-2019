@@ -1,0 +1,17 @@
+US Soybeans Futures Historical Data.csv: https://www.investing.com/commodities/us-soybeans-historical-data
+ - Provides soybean future index
+
+GDPDEF.csv: https://fred.stlouisfed.org/series/GDPDEF
+ - GDP Deflator
+
+fytop25hvpexp.xls: https://www.ers.usda.gov/data-products/foreign-agricultural-trade-of-the-united-states-fatus/fiscal-year/
+ - Gives total US trade exports per year
+
+xfytop15.xls: https://www.ers.usda.gov/data-products/foreign-agricultural-trade-of-the-united-states-fatus/fiscal-year/
+ - Amount of agricultural exports for top countries
+
+soybean-prices-historical-chart-data.csv: https://www.macrotrends.net/2531/soybean-prices-historical-chart-data
+ - Historical soybean prices
+
+yields: https://quickstats.nass.usda.gov
+ - Yield data

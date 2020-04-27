@@ -1,0 +1,24 @@
+model {
+  for(i in 1:n) {
+    y[i] ~ dnorm(y.hat[i], tau.y)
+    y.hat[i] <- a[county[i]] + b[county[i]] * aug[i] + c1 * year[i] + c2 * pow(year[i], 2)
+  }
+
+  tau.y <- pow(sigma.y, -2)
+  sigma.y ~ dunif(0, 100)
+  c1 ~ dnorm(0, 0.0001)
+  c2 ~ dnorm(0, 0.0001)
+  
+  for(j in 1:J) {
+    a[j] ~ dnorm(mu.a, tau.a)
+    b[j] ~ dnorm(mu.b, tau.b)
+  }
+  
+  mu.a ~ dnorm(0, 0.0001)
+  tau.a <- pow(sigma.a, -2)
+  sigma.a ~ dunif(0, 100)
+  
+  mu.b ~ dnorm(0, 0.0001)
+  tau.b <- pow(sigma.b, -2)
+  sigma.b ~ dunif(0, 100)
+}
